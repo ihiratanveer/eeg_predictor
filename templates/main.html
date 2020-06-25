@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EEG Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/components.css') }} ">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/icons.css') }} ">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsee.css') }} ">
+    <link rel="stylesheet" href="{{ url_for('static', filename='owl-carousel/owl.carousel.css') }} ">
+    <link rel="stylesheet" href="{{ url_for('static', filename='owl-carousel/owl.theme.css') }} ">     
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/template-style.css') }} ">
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-1.8.3.min.js') }} "></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-ui.min.js') }} "></script>      
+
+  
+  </head>
+  
+  <body class="size-1140">
+  	<!-- PREMIUM FEATURES BUTTON -->
+  	<a target="_blank" class="hide-s" href="https://github.com/rahatUlAin/diagnoseeg" style="position:fixed;top:120px;right:-14px;z-index:10;"><img src="{{ url_for('static', filename='img/premium-features.png') }} " alt=""></a>
+    <!-- HEADER -->
+    <header role="banner" class="position-absolute">    
+      <!-- Top Navigation -->
+      <nav class="background-transparent background-transparent-hightlight full-width sticky">
+        <div class="s-12 l-2">
+          <a href="index.html" class="logo">
+            <!-- Logo White Version -->
+            <img class="logo-white" src="{{ url_for('static', filename='img/logo-dark.png') }} " alt="">
+            <!-- Logo Dark Version -->
+            <img class="logo-dark" src="{{ url_for('static', filename='img/logo-dark.png') }} " alt="">
+          </a>
+        </div>
+        <div class="top-nav s-12 l-10">
+          <p class="nav-text"></p>
+          <ul class="right chevron">
+            <li><a href="">Home</a></li>
+            <li><a href="templates/about.html">About</a></li>
+
+          </ul>
+        </div>
+      </nav>
+    </header>
+    
+    <!-- MAIN -->
+    <main role="main">    
+      <!-- Main Header -->
+      <header>
+        <div class="carousel-default owl-carousel carousel-main carousel-nav-white background-dark text-center">
+          <div class="item">
+            <div class="s-12">
+              <img src="https://pratt.duke.edu/sites/pratt.duke.edu/files/styles/full_content_width_16_9/public/images/news/feature/eeg-SMALL.jpg?itok=To7MvzKZ" style="-webkit-filter: blur(5px); " alt="">
+              <div class="carousel-content">
+                <div class="content-center-vertical line">
+                  <div class="margin-top-bottom-80">
+                    <!-- Title -->
+                    <h1 class="text-white margin-bottom-30 text-size-60 text-m-size-30 text-line-height-1">Welcome to EEG Predictor!</h1>
+                    <div class="s-12 m-10 l-8 center"><p class="text-white text-size-14 margin-bottom-40" style="font-weight: bolder;">Please input your EEG file in .edf format down below and cross your fingers!</p></div>
+                    <form method="post" enctype=multipart/form-data>
+                      <div class="line">
+                      <div class="s-12 m-12 l-3 center">
+                      <input class="button button-white-stroke s-12" type="file" name="file" id="inputfile">
+                       </div>       
+                    </div> {{ value }}
+
+
+                      <div class="line">
+                      <div class="s-12 m-12 l-3 center">
+                        <input class="button button-white-stroke s-12" type="submit" value="Upload EEG File" name="submit">
+
+                      </div>       
+                    </div> 
+                 
+                    </form>
+ 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>              
+        </div>               
+      </header>
+
+     
+      <!-- Bottom Footer -->
+      <section class="padding background-dark full-width">
+        <div class="s-12 l-6">
+          <p class="text-size-12">Copyright 2020, Hira Tanveer, Rahat Ul Ain</p>
+          
+        </div>
+        <div class="s-12 l-6">
+          <a class="right text-size-12" href="http://www.myresponsee.com" title="Responsee - lightweight responsive framework">Design and coding<br> by Hira Tanveer, Rahat Ul Ain</a>
+        </div>
+      </section>
+    </footer>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/responsee.js') }}  "></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='owl-carousel/owl.carousel.js') }}  "></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/template-scripts.js') }}  "></script>
+  </body>
+</html>
+
